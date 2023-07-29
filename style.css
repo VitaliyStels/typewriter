@@ -1,0 +1,69 @@
+html, body {
+	background-color: black;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter', sans-serif;
+
+}
+
+.bg {
+	opacity: 0.2;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+	height: 200px;
+	background-color: #ECE9E4;
+	border-radius: 30px
+}
+
+span {
+	color: black;
+}
+
+
+@keyframes typing {
+    0% { content: "/"; }
+    13% { content: "/進行"; }
+    26% { content: "/con中"; }
+    39% { content: "/content"; }
+    52% { content: "/content の"; }
+    65% { content: "/content in コン"; }
+    78% { content: "/content in progテ"; }
+    91% { content: "/content in progreンツ.."; }
+		100% { content: "/content in progress..."; }
+
+}
+
+
+.typewriter {
+--caret: currentcolor;
+font-size: 30px;
+}
+
+.typewriter::before {
+content: "";
+animation: typing 2s forwards;
+}
+
+.typewriter::after {
+content: "";
+border-right: 1px solid var(--caret);
+}
+
+.typewriter.thick::after {
+border-right: 1ch solid var(--caret);
+}
+
